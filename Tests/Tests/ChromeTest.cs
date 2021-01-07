@@ -14,7 +14,15 @@ namespace Tests.Tests
         [TestMethod]
         public void TestMethod1()
         {
-            _temp.goToPage();
+            _application._dashboardCentralManager.ClickMenu();
+            _application._dashboardCentralManager.GoToFirstRoom();
+            _application._dashboardCentralManager.ClickOmRoomMenu();
+            //for some reason "Control" is empty not as expected from task
+            //_application._dashboardCentralManager.ClickOnControl();
+            _application._dashboardCentralManager.ClickOnClimate();
+            _application._dashboardCentralManager.ClickOnClimateMenuByIndex(0);
+            _application._dashboardCentralManager.EditAllDayCell();
+
         }
     }
 }

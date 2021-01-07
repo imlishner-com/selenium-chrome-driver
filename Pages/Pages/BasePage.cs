@@ -17,5 +17,7 @@ namespace Pages.Pages
             _driver = driver;
             _driverWait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
         }
+        public abstract void GoToPage();
+        //public abstract void IsAtPage();
     }
 }

@@ -64,6 +64,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{951C6011-969E-4C06-8F0A-FA0D3610F3C5}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Pages\Pages.csproj">
       <Project>{4D07FDE4-2D85-47B3-9A7D-791186E54341}</Project>
       <Name>Pages</Name>
